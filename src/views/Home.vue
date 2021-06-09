@@ -104,27 +104,27 @@
                         class="mb-4"
                       >
                         <v-expansion-panel>
-                            <v-expansion-panel-header>Web Development</v-expansion-panel-header>
+                            <v-expansion-panel-header class="text-center">Language</v-expansion-panel-header>
                             <v-expansion-panel-content>
-                              Some content
+                              I have learned HTML, CSS, JavaScript.
                             </v-expansion-panel-content>
                         </v-expansion-panel>
                         <v-expansion-panel>
-                            <v-expansion-panel-header>Design</v-expansion-panel-header>
+                            <v-expansion-panel-header>CSS Framework</v-expansion-panel-header>
                             <v-expansion-panel-content>
-                              Some content
+                              Tailwind CSS <span>or</span> Bootstrap
                             </v-expansion-panel-content>
                         </v-expansion-panel>
                         <v-expansion-panel>
-                            <v-expansion-panel-header>Marketing</v-expansion-panel-header>
+                            <v-expansion-panel-header>Frontend Framework</v-expansion-panel-header>
                             <v-expansion-panel-content>
-                              Some content
+                              Vue JS
                             </v-expansion-panel-content>
                         </v-expansion-panel>
                         <v-expansion-panel>
-                            <v-expansion-panel-header>Support</v-expansion-panel-header>
+                            <v-expansion-panel-header>UI Framework</v-expansion-panel-header>
                             <v-expansion-panel-content>
-                              Some content
+                              Vuetify
                             </v-expansion-panel-content>
                         </v-expansion-panel>
                     </v-expansion-panels>
@@ -135,7 +135,7 @@
       <!---End--->
       <!---timeline--->
         <v-container >
-            <v-card color="grey darken-4">
+            
               <h2 class="ml-5">What I Know</h2>
                 <v-row>
                   <v-flex xs12 md4 sm10 lg6
@@ -208,13 +208,12 @@
                         </v-timeline-item>
                       </v-timeline>
                   </v-flex>
-                  <v-flex xs12 md4 sm10 lg6 class="mt-15">
-                    <h2>My Skills</h2>
-                    <h3>Programming</h3>
+                  <v-flex xs12 md4 sm10 lg6 class="mt-10">
+                     <h2 class="mb-10">My Programming</h2>
                     <div>
                       <v-row>
                         <v-card
-                          width="500" flat>
+                          width="500" flat class="ml-5 mr-5">
                           <v-list disabled>
                             
                             <v-list-item-group color="primary">
@@ -305,106 +304,214 @@
                     </div>
                   </v-flex>
                 </v-row>
-            </v-card>
+            
         </v-container>
         <!---timeline--->
-        <!---Contact information--->
           <v-container>
             <v-card color="grey darken-4">
+         <!-- Section: My projects -->
+            <section id="projects" class="text-center">
+              <h3 class="my-5"><strong>My projects</strong></h3>
+
               <v-row>
-                <v-col
-                      class="text-center mt-10"
-                      cols="12" md="8" sm="4" lg="6"
-                    >
-                    <h2 class="display-1 mr-15 font-weight-thin">WhAT CAN I DO FOR YOU</h2>
-                    <P class="ma-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vel est interdum, pharetra magna ac, facilisis ante. Fusce eu finibus magna. Sest interdum, pharetra magna ac, facilisis ante. Fusce eu finibus magna.</P>
-                    <h3 class="display-1 mr-15 font-weight-thin mt-10">SEND ME A MESSAGE</h3>
-
-                      <v-row justify="center">
-                        <v-col
-                          cols="12"
-                          sm="10"
-                          md="8"
-                          lg="8">
-                          <v-card-text>
-                            <v-text-field
-                              v-model="last"
-                              label="Name"
-                              solo-inverted
-                            ></v-text-field>
-                            <v-text-field
-                              v-model="last"
-                              label="Email"
-                              solo-inverted
-                            ></v-text-field>
-                            <v-text-field
-                              v-model="last"
-                              label="Subject"
-                              solo-inverted
-                            ></v-text-field>
-                            <v-textarea
-                                filled
-                                label="Message"
-                                shaped
-                          ></v-textarea>
-                          </v-card-text>
-                          <v-card-actions>
-                              <v-btn
-                                color="orange"
-                                @click="submit"
-                              >
-                                SEND MESSAGE
-                              </v-btn>
-                          </v-card-actions>
-                      </v-col>
-                    </v-row>
-                  </v-col>
-                  <v-col
-                      class="text-center mt-10"
-                      cols="12" md="6" sm="4">
-                        <h1 class="display-1 ml-15 font-weight-thin">SOCIAL CONTACT</h1>
-                        <v-row
-                              justify="center"
-                              class="mr-15"
-                            >
-                              <v-btn icon>
-                                <v-icon>mdi-twitter</v-icon>
-                              </v-btn>
-
-                              <v-btn icon>
-                                <v-icon>mdi-linkedin</v-icon>
-                              </v-btn>
-
-                              <v-btn icon>
-                                <v-icon>mdi-github</v-icon>
-                              </v-btn>
-                        </v-row>
-                        <v-row align="center" justify="center" class="mt-10">
-                            <v-list-item-group
-                              two-line
-                            >
-                                <v-list-item
-                                  v-for="(grop, i) in grops"
-                                  :key="i"
-                                >
-                                    <v-list-item-icon 
-                                    >
-                                      <v-icon large
-                                        color="amber darken-3" v-text="grop.icon"></v-icon>
-                                    </v-list-item-icon>
-                                    <v-list-item-content>
-                                      <v-list-item-title color="orange" v-text="grop.title"></v-list-item-title>
-                                      <v-list-item-subtitle v-text="grop.subtitle"></v-list-item-subtitle>
-                                      <v-list-item-subtitle v-text="grop.text"></v-list-item-subtitle>
-                                    </v-list-item-content>
-                                </v-list-item>
-                            </v-list-item-group>
-                        </v-row>
-                  </v-col>
+                <v-col cols="12" lg="4" md="6" mb="4">
+                    <v-img
+                      height="250"
+                      src="https://retaintechnologies.com/wp-content/uploads/2020/04/Project-Management-Mantenimiento-1.jpg"
+                    ></v-img>
+                    <h2 class="text-center">Fish Keepers</h2>
+                    <div class="text-center mb-5">
+                        <v-btn
+                          color=""
+                          @click="reveal = true">
+                          <a href="#">See live</a>
+                        </v-btn>
+                     </div>
+                </v-col>
+                <v-col cols="12" lg="4" md="6" mb="4">
+                    <v-img
+                      height="250"
+                      src="https://retaintechnologies.com/wp-content/uploads/2020/04/Project-Management-Mantenimiento-1.jpg"
+                    ></v-img>
+                    <h2 class="text-center">Fish Keepers</h2>
+                    <div class="text-center mb-5">
+                        <v-btn
+                          color=""
+                          @click="reveal = true">
+                          <a href="#">See live</a>
+                        </v-btn>
+                     </div>
+                </v-col>
+                <v-col cols="12" lg="4" md="6" mb="4">
+                    <v-img
+                      height="250"
+                      src="https://retaintechnologies.com/wp-content/uploads/2020/04/Project-Management-Mantenimiento-1.jpg"
+                    ></v-img>
+                    <h2 class="text-center">Fish Keepers</h2>
+                    <div class="text-center mb-5">
+                        <v-btn
+                          color=""
+                          @click="reveal = true">
+                          <a href="#">See live</a>
+                        </v-btn>
+                     </div>
+                </v-col>
+                <v-col cols="12" lg="4" md="6" mb="4">
+                    <v-img
+                      height="250"
+                      src="https://retaintechnologies.com/wp-content/uploads/2020/04/Project-Management-Mantenimiento-1.jpg"
+                    ></v-img>
+                    <h2 class="text-center">Fish Keepers</h2>
+                    <div class="text-center mb-5">
+                        <v-btn
+                          color=""
+                          @click="reveal = true">
+                          <a href="#">See live</a>
+                        </v-btn>
+                     </div>
+                </v-col>
+                <v-col cols="12" lg="4" md="6" mb="4">
+                    <v-img
+                      height="250"
+                      src="https://retaintechnologies.com/wp-content/uploads/2020/04/Project-Management-Mantenimiento-1.jpg"
+                    ></v-img>
+                    <h2 class="text-center">Fish Keepers</h2>
+                    <div class="text-center mb-5">
+                        <v-btn
+                          color=""
+                          @click="reveal = true">
+                          <a href="#">See live</a>
+                        </v-btn>
+                     </div>
+                </v-col>
+               <v-col cols="12" lg="4" md="6" mb="4">
+                    <v-img
+                      height="250"
+                      src="https://retaintechnologies.com/wp-content/uploads/2020/04/Project-Management-Mantenimiento-1.jpg"
+                    ></v-img>
+                    <h2 class="text-center">Fish Keepers</h2>
+                    <div class="text-center mb-5">
+                        <v-btn
+                          color=""
+                          @click="reveal = true">
+                          <a href="#">See live</a>
+                        </v-btn>
+                     </div>
+                </v-col>
+                <v-col cols="12" lg="4" md="6" mb="4">
+                    <v-img
+                      height="250"
+                      src="https://retaintechnologies.com/wp-content/uploads/2020/04/Project-Management-Mantenimiento-1.jpg"
+                    ></v-img>
+                    <h2 class="text-center">Fish Keepers</h2>
+                    <div class="text-center mb-5">
+                        <v-btn
+                          color=""
+                          @click="reveal = true">
+                          <a href="#">See live</a>
+                        </v-btn>
+                     </div>
+                </v-col>
+                <v-col cols="12" lg="4" md="6" mb="4">
+                    <v-img
+                      height="250"
+                      src="https://retaintechnologies.com/wp-content/uploads/2020/04/Project-Management-Mantenimiento-1.jpg"
+                    ></v-img>
+                    <h2 class="text-center">Fish Keepers</h2>
+                    <div class="text-center mb-5">
+                        <v-btn
+                          color=""
+                          @click="reveal = true">
+                          <a href="#">See live</a>
+                        </v-btn>
+                     </div>
+                </v-col>
+                <v-col cols="12" lg="4" md="6" mb="4">
+                    <v-img
+                      height="250"
+                      src="https://retaintechnologies.com/wp-content/uploads/2020/04/Project-Management-Mantenimiento-1.jpg"
+                    ></v-img>
+                    <h2 class="text-center">Fish Keepers</h2>
+                    <div class="text-center mb-5">
+                        <v-btn
+                          color=""
+                          @click="reveal = true">
+                          <a href="#">See live</a>
+                        </v-btn>
+                     </div>
+                </v-col>
               </v-row>
+            </section>
             </v-card>
-        </v-container>
+            </v-container>
+          <!---project End--->
           <!---Contact information--->
+          <v-container>
+            <v-card color="grey darken-4">
+             
+          <v-row no-gutters>
+         
+            <v-row>
+              <!--Grid column-->
+              <v-col cols="4" md="8" mb="4" lg="12">
+                <h2 class="text-uppercase ml-5">Contact Me</h2>
+
+                 <v-list dense class="ml-5">
+                   <v-list-item-content>
+                      <v-list-item-title><a href="mailto:sazidahmed.official@gmail.com" class="text-dark">
+                      Email: sazidahmed.official@gmail.com</a></v-list-item-title>
+                      
+                  </v-list-item-content>
+                  <v-list-item-content>
+                    <v-list-item-title><a href="tel:+8801680800810" class="text-dark">Mobile: +8801680800810</a></v-list-item-title>
+                    
+                  </v-list-item-content>
+                   <v-list-item-content>
+                    <v-list-item-title>Address: Kamarpara, Uttara Dhaka</v-list-item-title>
+                  </v-list-item-content>
+                  
+                 </v-list>
+              </v-col>
+            </v-row>
+ 
+        <v-col cols="4" md="8" mb="4" lg="4" height="30">
+            <h2 class="text-uppercase mt-5">Message Me</h2>
+
+     <v-card-text>
+          <v-btn
+            v-for="icon in icons"
+            :key="icon"
+            class="mx-4"
+            icon
+          >
+            <v-icon size="24px">
+              {{ icon }}
+            </v-icon>
+          </v-btn>
+        </v-card-text>
+        </v-col>
+       
+        <v-col cols="4" md="8" mb="4" lg="4" height="30">
+            <h2 class="text-uppercase mt-5">Message Me</h2>
+
+        <v-card-text>
+              <v-btn
+                v-for="icon in icons"
+                :key="icon"
+                class="mx-4"
+                icon
+              >
+                <v-icon size="24px">
+                  {{ icon }}
+                </v-icon>
+              </v-btn>
+            </v-card-text>
+            </v-col>
+        </v-row>
+
+         </v-card>
+        </v-container>
+         
 
       </div>
         <footer class="bg-light text-center text-lg-left">
@@ -437,11 +544,14 @@
         { text: 'Audience', icon: 'mdi-email' },
         { text: 'Conversions', icon: 'mdi-phone' },
       ],
+       icons: [
+        'mdi-home',
+        'mdi-email',
+        'mdi-calendar',
+        'mdi-delete',
+      ],
+      
       skill: 95,
-      knowledge: 33,
-      power: 78,
-      
-      
       panel: [0, 1],
     }),
   }

@@ -1,7 +1,7 @@
 <template>
  <div id="app">
     <v-app id="inspire">
-      <v-navigation-drawer
+      <v-navigation-drawer 
         v-model="drawer"
         app>
         <v-list dense>
@@ -19,37 +19,37 @@
           </v-layout>
               <v-list-item link>
                   <v-list-item-content>
-                    <v-list-item-title >About Me</v-list-item-title>
+                    <v-list-item-title ><a href="#">About Me</a></v-list-item-title>
                   </v-list-item-content>
               </v-list-item>
               <v-list-item link>
                   <v-list-item-content>
-                    <v-list-item-title>Services</v-list-item-title>
+                    <v-list-item-title><a href="#">Services</a></v-list-item-title>
                   </v-list-item-content>
                 </v-list-item>
                 <v-list-item link>
                   <v-list-item-content>
-                    <v-list-item-title>Experience</v-list-item-title>
+                    <v-list-item-title><a href="#">Experience</a></v-list-item-title>
                   </v-list-item-content>
                 </v-list-item>
                 <v-list-item link>
                   <v-list-item-content>
-                    <v-list-item-title>Skills & Education</v-list-item-title>
+                    <v-list-item-title><a href="#">Skills & Education</a></v-list-item-title>
                   </v-list-item-content>
                 </v-list-item>
                 <v-list-item link>
                   <v-list-item-content>
-                    <v-list-item-title>Portfolio</v-list-item-title>
+                    <v-list-item-title><a href="#">Portfolio</a></v-list-item-title>
                   </v-list-item-content>
                 </v-list-item>
                 <v-list-item link>
                   <v-list-item-content>
-                    <v-list-item-title>Clients</v-list-item-title>
+                    <v-list-item-title><a href="#">Clients</a></v-list-item-title>
                   </v-list-item-content>
                 </v-list-item>
                 <v-list-item link>
                   <v-list-item-content>
-                    <v-list-item-title>Contact</v-list-item-title>
+                    <v-list-item-title><a href="#">Contact</a></v-list-item-title>
                   </v-list-item-content>
                 </v-list-item>
                 <v-list-item link>
@@ -74,14 +74,14 @@
           </v-list>
       </v-navigation-drawer>
       <!---EndNavbar--->
-      <v-app-bar
+      <!--<v-app-bar
         app
         color="indigo"
         dark
       >
         <v-app-bar-nav-icon @click.stop="drawer = !drawer"></v-app-bar-nav-icon>
         <v-toolbar-title>Application</v-toolbar-title>
-      </v-app-bar>
+      </v-app-bar>--->
       <v-main>
         <router-view></router-view>
       </v-main>
