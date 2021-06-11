@@ -10,7 +10,7 @@
                     <v-avatar size="100">
                         <img src="../assets/nupor.png" alt="">
                     </v-avatar>
-                     <p class="text-center">afrin</p>   
+                     <p class="text-center mt-4">afrin</p>   
                </v-flex>
                <small>afrin.nupor@yahoo.com</small>
                <v-flex class="mt-4 mb-4">
@@ -24,7 +24,7 @@
               </v-list-item>
               <v-list-item link>
                   <v-list-item-content>
-                    <v-list-item-title><a href="#">Services</a></v-list-item-title>
+                    <v-list-item-title><a href="#">My Skills</a></v-list-item-title>
                   </v-list-item-content>
                 </v-list-item>
                 <v-list-item link>
@@ -39,17 +39,12 @@
                 </v-list-item>
                 <v-list-item link>
                   <v-list-item-content>
-                    <v-list-item-title><a href="#">Portfolio</a></v-list-item-title>
+                    <v-list-item-title><a href="#">My Project</a></v-list-item-title>
                   </v-list-item-content>
                 </v-list-item>
                 <v-list-item link>
                   <v-list-item-content>
-                    <v-list-item-title><a href="#">Clients</a></v-list-item-title>
-                  </v-list-item-content>
-                </v-list-item>
-                <v-list-item link>
-                  <v-list-item-content>
-                    <v-list-item-title><a href="#">Contact</a></v-list-item-title>
+                    <v-list-item-title><a href="#">Contact Me</a></v-list-item-title>
                   </v-list-item-content>
                 </v-list-item>
                 <v-list-item link>
