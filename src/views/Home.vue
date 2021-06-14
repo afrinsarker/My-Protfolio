@@ -77,10 +77,10 @@
                           v-for="(item, i) in items"
                           :key="i"
                         >
-                            <v-list-item-content class="color">
+                            <v-list-item-content >
                               <v-list-item-title v-text="item.text"></v-list-item-title>
                             </v-list-item-content>
-                            <v-list-item-content class="color">
+                            <v-list-item-content >
                               <v-list-item-subtitle v-text="item.subtitle"></v-list-item-subtitle>
                             </v-list-item-content>
                         </v-list-item>
@@ -218,7 +218,7 @@
                           width="500" flat class="ml-5 mr-5">
                           <v-list disabled>
                             
-                            <v-list-item-group color="primary">
+                            <v-list-item-group color="">
                               <v-list-item >
                                 <v-list-item-content>
                                     <v-row>
@@ -326,7 +326,7 @@
                         <v-btn
                           color=""
                           @click="reveal = true">
-                          <a href="#">See live</a>
+                          <a class="text-decoration-none" href="#">See live</a>
                         </v-btn>
                      </div>
                 </v-col>
@@ -340,7 +340,7 @@
                         <v-btn
                           color=""
                           @click="reveal = true">
-                          <a href="#">See live</a>
+                          <a class="text-decoration-none" href="#">See live</a>
                         </v-btn>
                      </div>
                 </v-col>
@@ -354,7 +354,7 @@
                         <v-btn
                           color=""
                           @click="reveal = true">
-                          <a href="#">See live</a>
+                          <a class="text-decoration-none" href="#">See live</a>
                         </v-btn>
                      </div>
                 </v-col>
@@ -368,7 +368,7 @@
                         <v-btn
                           color=""
                           @click="reveal = true">
-                          <a href="#">See live</a>
+                          <a class="text-decoration-none" href="#">See live</a>
                         </v-btn>
                      </div>
                 </v-col>
@@ -382,7 +382,7 @@
                         <v-btn
                           color=""
                           @click="reveal = true">
-                          <a href="#">See live</a>
+                          <a class="text-decoration-none" href="#">See live</a>
                         </v-btn>
                      </div>
                 </v-col>
@@ -396,7 +396,7 @@
                         <v-btn
                           color=""
                           @click="reveal = true">
-                          <a href="#">See live</a>
+                          <a class="text-decoration-none" href="#">See live</a>
                         </v-btn>
                      </div>
                 </v-col>
@@ -410,7 +410,7 @@
                         <v-btn
                           color=""
                           @click="reveal = true">
-                          <a href="#">See live</a>
+                          <a class="text-decoration-none" href="#">See live</a>
                         </v-btn>
                      </div>
                 </v-col>
@@ -424,7 +424,7 @@
                         <v-btn
                           color=""
                           @click="reveal = true">
-                          <a href="#">See live</a>
+                          <a class="text-decoration-none" href="#">See live</a>
                         </v-btn>
                      </div>
                 </v-col>
@@ -438,7 +438,7 @@
                         <v-btn
                           color=""
                           @click="reveal = true">
-                          <a href="#">See live</a>
+                          <a class="text-decoration-none" href="#">See live</a>
                         </v-btn>
                      </div>
                 </v-col>
@@ -455,17 +455,17 @@
          
             <v-row>
               <!--Grid column-->
-              <v-col cols="4" md="8" mb="4" lg="12">
+              <v-col cols="12" md="8" mb="4" lg="12">
                 <h2 class="text-uppercase ml-5">Contact Me</h2>
 
                  <v-list dense class="ml-5">
                    <v-list-item-content>
-                      <v-list-item-title><a href="afrinsarker91@gmail.com" class="text-dark">
+                      <v-list-item-title><a class="text-decoration-none" href="afrinsarker91@gmail.com">
                       Email: afrinsarker91@gmail.com</a></v-list-item-title>
                       
                   </v-list-item-content>
                   <v-list-item-content>
-                    <v-list-item-title><a href="tel:+8801706497553" class="text-dark">Mobile: +8801706497553</a></v-list-item-title>
+                    <v-list-item-title><a class="text-decoration-none" href="tel:+8801706497553">Mobile: +8801706497553</a></v-list-item-title>
                     
                   </v-list-item-content>
                    <v-list-item-content>
@@ -476,14 +476,14 @@
               </v-col>
             </v-row>
  
-        <v-col cols="4" md="8" mb="4" lg="4" height="30">
-            <h2 class="text-uppercase mt-5">Message Me</h2>
+        <v-col cols="12" md="8" mb="4" lg="4" height="30">
+            <h2 class="text-uppercase mt-5 text-center">Message Me</h2>
 
-     <v-card-text>
+        <v-card-text>
           <v-btn
             v-for="icon in icons"
             :key="icon"
-            class="mx-4"
+            class="mx-4 mr-20"
             icon
           >
             <v-icon size="24px">
@@ -493,8 +493,8 @@
         </v-card-text>
         </v-col>
        
-        <v-col cols="4" md="8" mb="4" lg="4" height="30">
-            <h2 class="text-uppercase mt-5">Message Me</h2>
+        <v-col cols="12" md="8" mb="4" lg="4" height="30">
+            <h2 class="text-uppercase text-center mt-5">Message Me</h2>
 
         <v-card-text>
               <v-btn
@@ -516,14 +516,14 @@
          
 
       </div>
-        <footer class="bg-light text-center text-lg-left">
+        <footer class=" text-center text-lg-left">
           <!-- Copyright -->
           <div
             class="text-center p-3"
             style="background-color: rgba(0, 0, 0, 0.2);"
           >
             © 2021 Copyright:
-            <a class="text-dark ma-4 " href="https://mdbootstrap.com/"
+            <a class=" ma-4 " href="https://mdbootstrap.com/"
               >Afrin Sarker</a
             >
           </div>

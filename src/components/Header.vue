@@ -8,7 +8,7 @@
             <v-layout column align-center>
                <v-flex class="mt-5"> 
                     <v-avatar size="100">
-                        <img src="../assets/nupor.png" alt="">
+                        <img src="../assets/afrin.png" alt="">
                     </v-avatar>
                      <p class="text-center mt-4">afrin</p>   
                </v-flex>
@@ -19,32 +19,32 @@
           </v-layout>
               <v-list-item link>
                   <v-list-item-content>
-                    <v-list-item-title ><a href="#">About Me</a></v-list-item-title>
+                    <v-list-item-title ><a class="text-decoration-none" href="#">About Me</a></v-list-item-title>
                   </v-list-item-content>
               </v-list-item>
               <v-list-item link>
                   <v-list-item-content>
-                    <v-list-item-title><a href="#">My Skills</a></v-list-item-title>
+                    <v-list-item-title><a class="text-decoration-none" href="#">My Skills</a></v-list-item-title>
                   </v-list-item-content>
                 </v-list-item>
                 <v-list-item link>
                   <v-list-item-content>
-                    <v-list-item-title><a href="#">Experience</a></v-list-item-title>
+                    <v-list-item-title><a class="text-decoration-none" href="#">Experience</a></v-list-item-title>
                   </v-list-item-content>
                 </v-list-item>
                 <v-list-item link>
                   <v-list-item-content>
-                    <v-list-item-title><a href="#">Skills & Education</a></v-list-item-title>
+                    <v-list-item-title><a class="text-decoration-none" href="#">Skills & Education</a></v-list-item-title>
                   </v-list-item-content>
                 </v-list-item>
                 <v-list-item link>
                   <v-list-item-content>
-                    <v-list-item-title><a href="#">My Project</a></v-list-item-title>
+                    <v-list-item-title><a  class="text-decoration-none" href="#">My Project</a></v-list-item-title>
                   </v-list-item-content>
                 </v-list-item>
                 <v-list-item link>
                   <v-list-item-content>
-                    <v-list-item-title><a href="#">Contact Me</a></v-list-item-title>
+                    <v-list-item-title><a class="text-decoration-none" href="#">Contact Me</a></v-list-item-title>
                   </v-list-item-content>
                 </v-list-item>
                 <v-list-item link>
@@ -103,10 +103,20 @@ export default {
  
 .v-list-item.v-list-item--link.theme--dark {
     text-align: center;
+   
     
    
 }
 button.float-right.v-btn.v-btn--flat.v-btn--icon.v-btn--round.theme--dark.v-size--default {
     margin: 10px;
+}
+a {
+    list-style:none;
+}
+ a {
+    list-style: none;
+    font-size: 15px;
+    color: white;
+    padding: 5px;
 }
 </style>
