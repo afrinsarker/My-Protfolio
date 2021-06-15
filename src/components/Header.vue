@@ -19,17 +19,17 @@
           </v-layout>
               <v-list-item link>
                   <v-list-item-content>
-                    <v-list-item-title ><a class="text-decoration-none" href="#">About Me</a></v-list-item-title>
+                    <v-list-item-title ><a class="text-decoration-none" href="About">About Me</a></v-list-item-title>
                   </v-list-item-content>
               </v-list-item>
               <v-list-item link>
                   <v-list-item-content>
-                    <v-list-item-title><a class="text-decoration-none" href="#">My Skills</a></v-list-item-title>
+                    <v-list-item-title><a class="text-decoration-none" href="Skills">My Skills</a></v-list-item-title>
                   </v-list-item-content>
                 </v-list-item>
                 <v-list-item link>
                   <v-list-item-content>
-                    <v-list-item-title><a class="text-decoration-none" href="#">Experience</a></v-list-item-title>
+                    <v-list-item-title><a class="text-decoration-none" href="Experience">Experience</a></v-list-item-title>
                   </v-list-item-content>
                 </v-list-item>
                 <v-list-item link>

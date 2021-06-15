@@ -1,75 +1,83 @@
 <template>
-   <nav>
-       <v-app-bar  color="red" dark app >
-           <v-app-bar-nav-icon @click.stop="drawer = !drawer"></v-app-bar-nav-icon>
-           <v-toolbar-title class="text-uppercase ">
-               <span class="font-weight-light">AAE</span>
-               <span>IdeaPro</span>
-           </v-toolbar-title>
-           <v-spacer></v-spacer>
-           <v-menu offset-y>
-      <template v-slot:activator="{ on }">
-        <v-btn
-          text
-          v-on="on"
-        >
-          <v-icon left>expand_more</v-icon>
-            <span>Menu</span>
-        </v-btn>
-      </template>
-      <v-list flat>
-        <v-list-item v-for="link in links"  :key="link.text" router :to="link.route" active-class="border">
-          <v-list-item-title >{{link.text}}</v-list-item-title>
-        </v-list-item>
-      </v-list>
-            </v-menu>
-            <v-btn text>
-                <span>Exit</span>
-                <v-icon right>exit_to_app</v-icon>
-             </v-btn>
-       </v-app-bar>
-      <v-navigation-drawer  v-model="drawer" dark app class="red darken-4">
-          <v-layout column align-center>
-               <v-flex class="mt-5"> 
-                    <v-avatar size="100">
-                            <img src="/img1.png" alt="">
-                    </v-avatar>
-                    <p class="white--text subheading mt-1 text-center">Username</p>
-               </v-flex>
-               <v-flex class="mt-4 mb-4">
-                <Popup />
-               </v-flex>
-          </v-layout>
-          <v-list flat>
-              <v-list-item v-for="link in links"  :key="link.text" router :to="link.route" active-class="border">
-                  <v-list-item-action>
-                     <v-icon >{{link.icon}}</v-icon>
-                  </v-list-item-action>
-                  <v-list-item-content >
-                      <v-list-item-title >{{link.text}}</v-list-item-title>
+   <div>
+    <!---Contact information--->
+     <v-container class="ml-2">
+       <v-card color="grey darken-4"> 
+         <v-row no-gutters>
+            <v-row>
+              <!--Grid column-->
+              <v-col cols="12" md="8" mb="4" lg="12">
+                <h2 class="text-uppercase ml-5">Contact Me</h2>
+
+                  <v-list dense class="ml-5">
+                    <v-list-item-content>
+                      <v-list-item-title><a class="text-decoration-none" href="afrinsarker91@gmail.com">
+                      Email: afrinsarker91@gmail.com</a></v-list-item-title>
+                      
                   </v-list-item-content>
-              </v-list-item>
-          </v-list>
-      </v-navigation-drawer>
-   </nav>
+                  <v-list-item-content>
+                    <v-list-item-title><a class="text-decoration-none" href="tel:+8801706497553">Mobile: +8801706497553</a></v-list-item-title>
+                    
+                  </v-list-item-content>
+                    <v-list-item-content>
+                    <v-list-item-title>Address: Kamarpara, Uttara Dhaka</v-list-item-title>
+                  </v-list-item-content>
+                  
+                  </v-list>
+              </v-col>
+            </v-row>
+            <v-col cols="12" md="8" mb="4" lg="4" height="30">
+                <h2 class="text-uppercase mt-5 text-center">Message Me</h2>
+
+              <v-card-text>
+                <v-btn
+                  v-for="icon in icons"
+                  :key="icon"
+                  class="mx-4 mr-20"
+                  icon
+                >
+                  <v-icon size="24px">
+                    {{ icon }}
+                  </v-icon>
+                </v-btn>
+              </v-card-text>
+              </v-col>
+               <v-col cols="12" md="8" mb="4" lg="4" height="30">
+                 <h2 class="text-uppercase text-center mt-5">Message Me</h2>
+                  <v-card-text>
+                      <v-btn
+                        v-for="icon in icons"
+                        :key="icon"
+                        class="mx-4"
+                        icon>
+                        <v-icon size="24px">
+                          {{ icon }}
+                        </v-icon>
+                      </v-btn>
+                   </v-card-text>
+              </v-col>
+          </v-row>
+        </v-card>
+      </v-container>
+   </div>
 </template>
 <script>
-import Popup from './Popup.vue'
 export default {
-   data: () => ({
-      drawer: true,
-      links :[
-          {icon: 'dashboard', text:'Dashboard', route: '/'},
-          {icon: 'folder', text:'My Project', route: '/projects'},
-          {icon: 'person', text:'Team', route: '/team'}
-      ]
-     
-    }),
-    components: {
-    Popup
-  },
-
-   
+   data() {
+      return{
+          grops: [
+          { title: 'Address' , subtitle: 'Kamarpara, uttara', text: 'Dhaka-1230', icon: 'mdi-map-marker' },
+          { text: 'Audience', icon: 'mdi-email' },
+          { text: 'Conversions', icon: 'mdi-phone' },
+        ],
+        icons: [
+          'mdi-home',
+          'mdi-email',
+          'mdi-calendar',
+          'mdi-delete',
+        ],
+      }
+    },
 }
 </script>
 <style scoped>
