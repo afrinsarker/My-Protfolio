@@ -2,26 +2,31 @@
   <div class="px-2">
     <!---heropage--->
     <div>
-       <Hero/>
+       <HeroComponent/>
     </div>
     <!---heropage--->
     <!---About me--->
     <div>
-       <About/>
+       <AboutComponent/>
     </div>
     <!---My skills--->
     <div>
-       <Skills/>
+       <SkillsComponent/>
     </div>
     <!---My skills--->
     <!---Education & skills--->
     <div>
-       <Education/>
+       <ExperienceComponent/>
     </div>
+    <!---Experience--->
+    <div>
+       <EducationComponent/>
+    </div>
+    <!---End Experience--->
     <!---Education & skills--->
     <!---My project--->
     <div>
-       <Project/>
+       <ProjectComponent/>
     </div>
     <!---My project--->
     <!---Footer--->
@@ -41,11 +46,12 @@
 </template>
 
 <script>
-import Hero from '@/components/Hero'
-import About from '@/components/About'
-import Skills from '@/components/Skills'
-import Education from '@/components/Education'
-import Project from '@/components/Project'
+import HeroComponent from '@/components/HeroComponent'
+import AboutComponent from '@/components/AboutComponent'
+import SkillsComponent from '@/components/SkillsComponent'
+import ExperienceComponent from '@/components/ExperienceComponent'
+import EducationComponent from '@/components/EducationComponent'
+import ProjectComponent from '@/components/ProjectComponent'
 import Footer from '@/components/Footer'
 export default {
 data() {
@@ -53,11 +59,12 @@ data() {
       }
     },
       components:{
-      Hero,
-      About,
-      Skills,
-      Education,
-      Project,
+      HeroComponent,
+      AboutComponent,
+      SkillsComponent,
+      ExperienceComponent,
+      EducationComponent,
+      ProjectComponent,
       Footer
   },
 }

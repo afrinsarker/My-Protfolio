@@ -19,7 +19,7 @@
           </v-layout>
               <v-list-item link>
                   <v-list-item-content>
-                    <v-list-item-title ><a class="text-decoration-none" href="About">About Me</a></v-list-item-title>
+                    <v-list-item-title ><router-link to="/Education" class="text-decoration-none">About Me</router-link></v-list-item-title>
                   </v-list-item-content>
               </v-list-item>
               <v-list-item link>

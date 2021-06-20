@@ -1,7 +1,11 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
-
+import Education from '../views/Education.vue'
+import Experience from '../views/Experience.vue'
+import Hero from '../views/Hero.vue'
+import Project from '../views/Project.vue'
+import Skills from '../views/Skills.vue'
 Vue.use(VueRouter)
 
 const routes = [
@@ -9,6 +13,31 @@ const routes = [
     path: '/',
     name: 'Home',
     component: Home
+  },
+  {
+    path: '/education',
+    name: 'Education',
+    component: Education
+  },
+  {
+    path: '/experience',
+    name: 'Experience',
+    component: Experience
+  },
+  {
+    path: '/hero',
+    name: 'Hero',
+    component: Hero
+  },
+  {
+    path: '/project',
+    name: 'Project',
+    component: Project
+  },
+  {
+    path: '/skills',
+    name: 'Skills',
+    component: Skills
   },
   {
     path: '/about',

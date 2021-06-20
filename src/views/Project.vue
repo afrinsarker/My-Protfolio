@@ -1,18 +1,18 @@
 <template>
   <div>
-      <AboutComponent/>
+      <ProjectComponent/>
   </div>
 </template>
 
 <script>
-import AboutComponent from '@/components/AboutComponent'
+import ProjectComponent from '@/components/ProjectComponent'
 export default {
     data() {
     return{
       }
     },
       components:{
-      AboutComponent,
+      ProjectComponent,
       
   },
 
