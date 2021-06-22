@@ -2,7 +2,7 @@
   <div>
     <div class="app">
       <v-card
-        class="portrait"
+        class="portrait mt-1"
         img="https://picjumbo.com/wp-content/uploads/young-woman-workingtyping-on-her-laptop-1570x1047.jpg"
         height="500px">
             <v-row>
