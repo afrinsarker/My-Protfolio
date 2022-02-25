@@ -3,8 +3,8 @@
     <div class="app">
       <v-card
         class="portrait mt-1"
-        img="https://picjumbo.com/wp-content/uploads/young-woman-workingtyping-on-her-laptop-1570x1047.jpg"
-        height="500px">
+       >
+       <img src="../assets/labtop.jpg" alt="" height="500" width="100%">
             <v-row>
                 <v-col
                   class="text-center mt-15"

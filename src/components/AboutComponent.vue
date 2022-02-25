@@ -7,7 +7,7 @@
         <v-row>
             <v-flex xs12 md4 lg6>
                 <v-card-text class="ml-4">
-                   I am front-end developer that specializes in Vue and Veutify development. I am experience Web App Development having 1 years old experience in the field of Web App Development , Web research. I really love learning new technologies and techniques. I am born to face challenges. I have a vision and always, before starting a job. 
+                   I am front-end developer that specializes in Vue and Veutify development. I am experience Web App Development having 3 years old experience in the field of Web App Development , Web research. I really love learning new technologies and techniques. I am born to face challenges. I have a vision and always, before starting a job. 
                 </v-card-text>
             </v-flex>
             <v-flex xs12 md2 sm10 lg5>
